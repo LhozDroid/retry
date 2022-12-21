@@ -5,18 +5,18 @@ A simple and small framework to retry a method...
 
 ```java
 final Retry retry = new RetryBuilder()//
-				.withAttempts(3) //
-				.withSleep(500) //
-				.withMethod(() -> {
-					// TODO: Do something
-				}).build();
+			.withAttempts(3) //
+			.withSleep(500) //
+			.withMethod(() -> {
+				// TODO: Do something
+			}).build();
 ```
 
 2- Execute it
 
 ```java
 try {
-  retry.run();
+	retry.run();
 } catch (final RetryException e) {
 	LOG.error(e.getLocalizedMessage(), e);
 }
