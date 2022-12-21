@@ -27,7 +27,9 @@ public class RetryBuilder extends Retry {
 	 * @return
 	 */
 	public RetryBuilder withAttempts(final int attempts) {
-		super.setAttempts(attempts);
+		if (attempts > 0) {
+			this.attempts = attempts;
+		}
 		return this;
 	}
 
@@ -36,7 +38,7 @@ public class RetryBuilder extends Retry {
 	 * @return
 	 */
 	public RetryBuilder withMethod(final Runnable runnable) {
-		super.setRunnable(runnable);
+		this.runnable = runnable;
 		return this;
 	}
 
@@ -45,7 +47,9 @@ public class RetryBuilder extends Retry {
 	 * @return
 	 */
 	public RetryBuilder withSleep(final long sleep) {
-		super.setSleep(sleep);
+		if (sleep > 0) {
+			this.sleep = sleep;
+		}
 		return this;
 	}
 }
