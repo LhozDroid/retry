@@ -1,7 +1,7 @@
 /**
  *
  */
-package dev.lhoz.resilence.retry;
+package com.github.lhoz.resilence.retry;
 
 /**
  * @author Lhoz

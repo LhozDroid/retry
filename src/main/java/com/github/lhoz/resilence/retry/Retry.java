@@ -1,7 +1,7 @@
 /**
  *
  */
-package dev.lhoz.resilence.retry;
+package com.github.lhoz.resilence.retry;
 
 import lombok.extern.log4j.Log4j2;
 

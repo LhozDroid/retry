@@ -5,9 +5,10 @@ package dev.lhoz.resilence.retry.example;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import dev.lhoz.resilence.retry.Retry;
-import dev.lhoz.resilence.retry.RetryBuilder;
-import dev.lhoz.resilence.retry.RetryException;
+import com.github.lhoz.resilence.retry.Retry;
+import com.github.lhoz.resilence.retry.RetryBuilder;
+import com.github.lhoz.resilence.retry.RetryException;
+
 import lombok.extern.log4j.Log4j2;
 
 /**
